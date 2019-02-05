@@ -1,5 +1,9 @@
 define([
-	"./images"
-],function(images){
-	return images;
+	"./imagex",
+	"./meta",
+	"./exif",
+	"./scale",
+	"./loadFile"
+],function(imagex){
+	return imagex;
 });

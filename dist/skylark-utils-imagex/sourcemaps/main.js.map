@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["define","images"],"mappings":";;;;;;;AAAAA,QACC,YACC,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./images\"\r\n],function(images){\r\n\treturn images;\r\n});"]}
+{"version":3,"sources":["main.js"],"names":["define","imagex"],"mappings":";;;;;;;AAAAA,QACC,WACA,SACA,SACA,UACA,cACC,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./imagex\",\r\n\t\"./meta\",\r\n\t\"./exif\",\r\n\t\"./scale\",\r\n\t\"./loadFile\"\r\n],function(imagex){\r\n\treturn imagex;\r\n});"]}

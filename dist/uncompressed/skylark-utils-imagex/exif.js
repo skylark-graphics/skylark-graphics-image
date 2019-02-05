@@ -1,6 +1,7 @@
 define([
-  "./images"
-], function(images) {
+  "./imagex",
+  "./meta"
+], function(imagex,meta) {
    //The module code is based from blueimp/JavaScript-Load-Image
    // original : https://github.com/blueimp/JavaScript-Load-Image/blob/master/js/load-image-scale.js
    // license  : MIT
@@ -293,7 +294,7 @@ define([
   }
 
   // Registers the Exif parser for the APP1 JPEG meta data segment:
-  exif.metaDataParsers.jpeg[0xffe1].push(exif.parseExifData)
+  meta.metaDataParsers.jpeg[0xffe1].push(exif.parseExifData)
 
   // Adds the following properties to the parseMetaData callback data:
   // * exif: The exif tags, parsed by the parseExifData method
@@ -304,6 +305,6 @@ define([
   // * disableExifSub: Disables parsing of the Exif Sub IFD.
   // * disableExifGps: Disables parsing of the Exif GPS Info IFD.
 
-  return images.exif = exif;
+  return imagex.exif = exif;
 
 });
