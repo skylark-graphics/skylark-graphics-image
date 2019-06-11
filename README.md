@@ -1,2 +1,2 @@
-# skylark-utils-imagex
+# skylark-graphics-image
 The skylark image utility library

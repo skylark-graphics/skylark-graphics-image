@@ -1,5 +1,5 @@
 /**
- * skylark-utils-imagex - The skylark imagex utility library
+ * skylark-graphics-image - The skylark imagex utility library
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-utils-imagex/imagex',[
+define('skylark-graphics-image/imagex',[
 	"skylark-langx/skylark"
 ],function(skylark){
 
@@ -159,7 +159,7 @@ define('skylark-utils-imagex/imagex',[
 	
 	return skylark.imagex = imagex;
 });
-define('skylark-utils-imagex/meta',[
+define('skylark-graphics-image/meta',[
   "./imagex",
 ], function(imagex) {
   'use strict'
@@ -317,7 +317,7 @@ define('skylark-utils-imagex/meta',[
 
   return imagex.meta = meta;
 });
-define('skylark-utils-imagex/exif',[
+define('skylark-graphics-image/exif',[
   "./imagex",
   "./meta"
 ], function(imagex,meta) {
@@ -627,7 +627,7 @@ define('skylark-utils-imagex/exif',[
   return imagex.exif = exif;
 
 });
-define('skylark-utils-imagex/scale',[
+define('skylark-graphics-image/scale',[
   "./imagex"
 ], function(imagex) {
    //The module code is based from blueimp/JavaScript-Load-Image
@@ -884,7 +884,7 @@ define('skylark-utils-imagex/scale',[
 
   return imagex.scale = scale;
 });
-define('skylark-utils-imagex/loadFile',[
+define('skylark-graphics-image/loadFile',[
   "./imagex"
 ], function(imagex) {
 
@@ -947,7 +947,7 @@ define('skylark-utils-imagex/loadFile',[
   return imagex.loadFile = loadFile;
 
 });
-define('skylark-utils-imagex/main',[
+define('skylark-graphics-image/main',[
 	"./imagex",
 	"./meta",
 	"./exif",
@@ -956,8 +956,8 @@ define('skylark-utils-imagex/main',[
 ],function(imagex){
 	return imagex;
 });
-define('skylark-utils-imagex', ['skylark-utils-imagex/main'], function (main) { return main; });
+define('skylark-graphics-image', ['skylark-graphics-image/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-utils-imagex.js.map
+//# sourceMappingURL=sourcemaps/skylark-graphics-image.js.map

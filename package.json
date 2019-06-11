@@ -1,5 +1,5 @@
 {
-  "name": "skylark-utils-imagex",
+  "name": "skylark-graphics-image",
   "version": "0.9.0",
   "description": "The skylark imagex utility library",
   "main": "-",
@@ -10,7 +10,7 @@
   "homepage": "www.skylarkjs.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skylarkjs/skylark-utils-imagex.git"
+    "url": "git+https://github.com/skylark-graphics/skylark-graphics-image.git"
   },
   "keywords": [
     "skylark",
