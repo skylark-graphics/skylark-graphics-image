@@ -1,5 +1,5 @@
 define([
-  "./imagex"
+  "./image"
 ], function(imagex) {
    //The module code is based from blueimp/JavaScript-Load-Image
    // original : https://github.com/blueimp/JavaScript-Load-Image/blob/master/js/load-image-scale.js

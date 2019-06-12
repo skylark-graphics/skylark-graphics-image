@@ -1,5 +1,5 @@
 define([
-	"./imagex",
+	"./image",
 	"./meta",
 	"./exif",
 	"./scale",

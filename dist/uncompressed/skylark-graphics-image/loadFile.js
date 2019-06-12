@@ -1,5 +1,5 @@
 define([
-  "./imagex"
+  "./image"
 ], function(imagex) {
 
   'use strict'

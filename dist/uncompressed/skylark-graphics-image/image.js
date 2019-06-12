@@ -69,5 +69,5 @@ define([
 		return false
 	}
 	
-	return skylark.imagex = imagex;
+	return skylark.attach("graphics.image", imagex);
 });

@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-graphics-image/imagex',[
+define('skylark-graphics-image/image',[
 	"skylark-langx/skylark"
 ],function(skylark){
 
@@ -157,10 +157,10 @@ define('skylark-graphics-image/imagex',[
 		return false
 	}
 	
-	return skylark.imagex = imagex;
+	return skylark.attach("graphics.image", imagex);
 });
 define('skylark-graphics-image/meta',[
-  "./imagex",
+  "./image",
 ], function(imagex) {
   'use strict'
 
@@ -318,7 +318,7 @@ define('skylark-graphics-image/meta',[
   return imagex.meta = meta;
 });
 define('skylark-graphics-image/exif',[
-  "./imagex",
+  "./image",
   "./meta"
 ], function(imagex,meta) {
    //The module code is based from blueimp/JavaScript-Load-Image
@@ -628,7 +628,7 @@ define('skylark-graphics-image/exif',[
 
 });
 define('skylark-graphics-image/scale',[
-  "./imagex"
+  "./image"
 ], function(imagex) {
    //The module code is based from blueimp/JavaScript-Load-Image
    // original : https://github.com/blueimp/JavaScript-Load-Image/blob/master/js/load-image-scale.js
@@ -885,7 +885,7 @@ define('skylark-graphics-image/scale',[
   return imagex.scale = scale;
 });
 define('skylark-graphics-image/loadFile',[
-  "./imagex"
+  "./image"
 ], function(imagex) {
 
   'use strict'
@@ -948,7 +948,7 @@ define('skylark-graphics-image/loadFile',[
 
 });
 define('skylark-graphics-image/main',[
-	"./imagex",
+	"./image",
 	"./meta",
 	"./exif",
 	"./scale",

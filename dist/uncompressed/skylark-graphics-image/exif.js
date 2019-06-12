@@ -1,5 +1,5 @@
 define([
-  "./imagex",
+  "./image",
   "./meta"
 ], function(imagex,meta) {
    //The module code is based from blueimp/JavaScript-Load-Image
